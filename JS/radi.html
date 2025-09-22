@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myh1">Enter the radius of the circle: </h1>
+    <label for="rad">Radius: </label>
+    <input type="text" id="rad">
+    <button id="sub">Submit</button>
+
+
+
+    <script>
+        let cir
+        const PI=3.14
+        let area
+        document.getElementById("sub").onclick=function(){
+            cir=document.getElementById("rad").value
+            area=3.14*cir**2
+            document.getElementById("myh1").textContent=`Area of the circle is ${area} cm`
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+p{
+    color: white;
+    font-family: "lucida console","Courier new";
+    font-size: 1.9em;
+    font-weight: bold;
+    font-style: normal;
+}
+h3{
+    color: red;
+    font-family: Verdana, arial;
+}

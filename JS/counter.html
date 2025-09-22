@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #label{
+            display: block;
+            text-align: center;
+            font-size: 10rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: aqua;
+        }
+
+        #container{
+            text-align: center;
+
+        }
+
+        .btns{
+            padding: 10px 20px;
+            font-size: 1.5em;
+            color: white;
+            background-color: hsl(240, 38%, 50%);
+            border: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.25s;
+
+        }
+
+        .btns:hover{
+            background-color: hsl(240, 38%, 65%);
+        }
+        .btns:active{
+            background-color: hsl(240, 38%, 80%);
+        }
+    </style>
+</head>
+<body>
+    <label for="" id="label">0</label><br>
+
+    <div id="container">
+        <button id="btn1" class="btns">Decrease</button>
+        <button id="btn2" class="btns">Reset</button>
+        <button id="btn3" class="btns">Increase</button>
+    </div>
+
+
+
+    <script>
+        const decre=document.getElementById("btn1")
+        const rese=document.getElementById("btn2")
+        const incre=document.getElementById("btn3")
+        const lab=document.getElementById("label")
+        let count=0
+        incre.onclick=function(){
+            count++
+            label.textContent=count
+        }
+        rese.onclick=function(){
+            count=0
+            label.textContent=count
+        }
+        decre.onclick=function(){
+            count--
+            label.textContent=count
+        }
+    </script>
+</body>
+</html>

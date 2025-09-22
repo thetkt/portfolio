@@ -1,0 +1,12 @@
+#im{
+    float: left;
+    margin-right: 10px;
+}
+#im2{
+    float: right;
+    margin-right: 10px;
+}
+body{
+    border: 3px solid;
+    display: flow-root;
+}

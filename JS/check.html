@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3em;
+        }
+        #btn{
+            font-size: medium;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="che">
+    <label for="che">Subscribe</label><br><br>
+
+
+    <input type="radio" id="visa" name="card">
+    <label for="visa">Visa</label><br>
+
+    <input type="radio" id="mas" name="card">
+    <label for="mas">Master Card</label><br>
+
+    <input type="radio" id="pay" name="card">
+    <label for="pay">Pay Pal</label> <br>
+
+    <button type="submit" id="btn">Submit</button>
+
+    <p id="res"></p>
+    <p id="payres"></p>
+
+    <script>
+        const che=document.getElementById("che")
+        const vis=document.getElementById("visa")
+        const mas=document.getElementById("mas")
+        const pay=document.getElementById("pay")
+        const btn=document.getElementById("btn")
+        const res=document.getElementById("res")
+        const payres=document.getElementById("payres")
+
+
+        btn.onclick=function(){
+            if(che.checked){
+                res.textContent="You have Subscribed the page"
+            }
+            else{
+                res.textContent="You have not subscribed the page "
+            }
+        }
+
+    </script>
+</body>
+</html>
